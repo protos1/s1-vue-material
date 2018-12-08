@@ -1,0 +1,35 @@
+body,
+.renan {
+  background-color: #f2f2f2;
+}
+
+.md-button.md-bordered {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 1px solid;
+    opacity: 0.15;
+  }
+}
+
+.md-button {
+  margin: 0;
+}
+
+.md-icon-button.md-bordered:not(.squared) {
+  &::after {
+    border-radius: 50%;
+  }
+}
+
+.md-icon-button.squared {
+  &,
+  & .md-ripple,
+  &::before {
+    border-radius: 2px;
+  }
+}
