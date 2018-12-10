@@ -1,0 +1,8 @@
+@mixin widthFactory($num) {
+  .#{$utilitiesClassNamePrefix}__width--#{$num}px {
+    width: unquote($num + 'px');
+    &.md-layout-item {
+      max-width: unquote($num + 'px');
+    }
+  }
+}

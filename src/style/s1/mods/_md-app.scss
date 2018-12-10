@@ -1,0 +1,39 @@
+.md-app {
+  &.main-md-app {
+    min-height: 100vh;
+  }
+  .md-content {
+    border: 0 none;
+  }
+}
+
+.md-app-scroller {
+  will-change: transform;
+}
+
+.s1-md-app--main {
+  height: 100vh;
+  border: 0 none !important;
+}
+
+.s1-md-app--main-structure {
+  width: 100%;
+  will-change: width;
+  main {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    > .md-app-scroller {
+      height: 100%;
+    }
+  }
+}
+
+.s1-md-app-content-main {
+  padding: 0 20px !important; 
+  width: calc(100% - #{$lateralBreathingSpace});
+}
+
+.md-app:not(.md-overlap).md-theme-default {
+  
+}

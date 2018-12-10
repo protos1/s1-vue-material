@@ -1,0 +1,34 @@
+.md-stepper-description {
+  opacity: 1 !important;
+  color: $dark2;
+  font-size: 16px !important;
+}
+
+.s1-stepper-number-accent {
+  &.md-steppers.md-theme-default .md-stepper-header.md-active .md-stepper-number,
+  &.md-steppers.md-theme-default .md-stepper-header.md-done .md-stepper-number {
+    background-color: $accent;
+  }
+  .md-stepper-header.md-active .md-stepper-text > span {
+    color: $accent !important;
+  }
+}
+
+.md-steppers.md-vertical .md-stepper-header {
+    height: 66px !important;
+}
+
+.md-stepper-number {
+    height: 36px !important;
+    width: 36px !important;
+    line-height: 36px !important;
+}
+
+.md-stepper-text {
+    line-height: 30px !important;
+    font-size: 18px !important;
+}
+
+.md-steppers.md-vertical .md-stepper-content {
+  padding-left: 73px !important;
+}

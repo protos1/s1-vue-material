@@ -1,0 +1,18 @@
+@include md-field-size(50);
+@include md-field-size(100);
+@include md-field-size(150);
+@include md-field-size(200);
+@include md-field-size(250);
+@include md-field-size(300);
+
+.md-field.md-theme-default:after {
+  background-color: rgba(0,0,0,0.12)
+}
+
+.md-field.md-theme-default.md-has-textarea:not(.md-autogrow):after {
+  border-color: rgba(0,0,0,0.12)
+}
+
+.s1-file-input input {
+  width: 100%;
+}

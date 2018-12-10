@@ -1,3 +1,61 @@
 @import "~vue-material/dist/vue-material.min.css";
 
-@import "./s1/components/md-button";
+//HACKS (crazy hacks to craziest contexts)
+@import "./s1/hacks/hacks";
+
+//VARIABLES
+@import "./s1/variables";
+
+//MIXINS
+@import "./s1/_mixins/border-radius";
+@import "./s1/_mixins/instalment-colors";
+@import "./s1/_mixins/md-field-size";
+@import "./s1/_mixins/spacing-utilities";
+@import "./s1/_mixins/width-size";
+
+// //MODS
+// @import "./s1/mods/md-app";
+// @import "./s1/mods/md-button";
+// @import "./s1/mods/md-card";
+// @import "./s1/mods/md-drawer";
+// @import "./s1/mods/md-field";
+// @import "./s1/mods/md-icon-inside-md-chip";
+// @import "./s1/mods/md-layout";
+// @import "./s1/mods/md-radio";
+// @import "./s1/mods/md-stepper";
+// @import "./s1/mods/md-svg-loader";
+// @import "./s1/mods/md-table";
+@import "./s1/mods/resets";
+
+//COMPONENTS - VUE MATERIAL
+@import "./s1/components-vm/md-button";
+
+//COMPONENTS - S1
+@import "./s1/components-s1/app-toolbar";
+@import "./s1/components-s1/card-flag";
+@import "./s1/components-s1/chip-wrapper";
+@import "./s1/components-s1/empty-state";
+@import "./s1/components-s1/general-structure";
+@import "./s1/components-s1/instalment-square";
+@import "./s1/components-s1/mezzanine";
+@import "./s1/components-s1/product-card";
+@import "./s1/components-s1/sort-icons";
+@import "./s1/components-s1/tag";
+@import "./s1/components-s1/transition-toogle";
+@import "./s1/components-s1/upload";
+@import "./s1/components-s1/vertical-divider";
+
+//UTILITIES
+@import "./s1/utilities/align-items";
+@import "./s1/utilities/bg-color";
+@import "./s1/utilities/border-radius";
+@import "./s1/utilities/border";
+@import "./s1/utilities/flex-settings";
+@import "./s1/utilities/height";
+@import "./s1/utilities/justify-content";
+@import "./s1/utilities/margins";
+@import "./s1/utilities/paddings";
+@import "./s1/utilities/text-color";
+@import "./s1/utilities/text-settings";
+@import "./s1/utilities/visibility";
+@import "./s1/utilities/width";
