@@ -1,17 +1,35 @@
 <template>
   <div id="app">
-    <MdButtonDoc msg="Welcome to Your Vue.js App"/>
+    <MdButtonDoc/>
+    <MdFieldDoc/>
   </div>
 </template>
 
 <script>
-import MdButtonDoc from "./components/MdButtonDoc.vue";
+import MdButtonDoc from "./components/MdButtonDoc/index.vue";
+import MdFieldDoc from "./components/MdFieldDoc/index.vue";
 
 export default {
   name: "app",
   components: {
-    MdButtonDoc
+    MdButtonDoc,
+    MdFieldDoc,
   }
 };
 </script>
+
+<style>
+code {
+  padding: 0;
+  border-radius: 0;
+  white-space: pre;
+}
+.example-code {
+  background-color: #fff;
+}
+
+p code {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+</style>
 
