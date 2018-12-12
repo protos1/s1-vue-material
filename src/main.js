@@ -1,7 +1,12 @@
 import Vue from "vue";
 import App from "./App.vue";
 
-import { MdButton, MdIcon, MdField } from "vue-material/dist/components";
+import {
+  MdButton,
+  MdIcon,
+  MdField,
+  MdSwitch
+} from "vue-material/dist/components";
 
 //general css file
 import "./style/layout.scss";
@@ -12,6 +17,7 @@ import "./style/theme.scss";
 Vue.use(MdButton);
 Vue.use(MdIcon);
 Vue.use(MdField);
+Vue.use(MdSwitch);
 
 Vue.config.productionTip = false;
 

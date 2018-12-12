@@ -1,0 +1,110 @@
+.md-field.md-focused label,
+.md-field.md-has-value label {
+  font-size: 14px;
+}
+
+.md-field input.md-input {
+  padding: 0 8px;
+}
+
+.md-field label {
+  left: 8px;
+  // top: 12px;
+}
+
+.md-field {
+  z-index: 0;
+}
+
+.md-field::after {
+  height: calc(100% + 8px);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  z-index: -1;
+  border-radius: 2px;
+}
+
+.md-field:not([class*="bg"])::after {
+  background-color: #fff !important;
+}
+
+.md-field:not(.md-inline).md-focused label {
+  opacity: 0.6;
+}
+
+.md-field {
+  > .md-helper-text,
+  > .md-count {
+    width: 100%;
+    position: static;
+    flex-shrink: 0;
+    height: auto;
+    padding: 0 8px 4px;
+  }
+}
+
+.md-count {
+  text-align: right;
+}
+
+.md-field.md-has-textarea {
+  padding-top: 24px;
+  > .md-textarea {
+    flex: none;
+    width: 100%;
+    flex-shrink: 0;
+    padding: 0 8px;
+  }
+}
+
+.md-field.md-has-textarea:not(.md-autogrow) label {
+  left: 8px;
+}
+
+.md-field.md-has-textarea:not(.md-autogrow) .md-textarea {
+  padding-left: 8px;
+}
+
+.md-field.md-theme-default.md-has-textarea:not(.md-autogrow):after {
+  border-color: rgba(0, 0, 0, 0.12) !important;
+  background-color: #fff !important;
+}
+
+.md-field.md-has-textarea:not(.md-autogrow):after,
+.md-field.md-has-textarea:not(.md-autogrow):before {
+  border-radius: 2px;
+}
+
+.md-field {
+  > .md-icon {
+    margin: 4px 0 4px 4px;
+    transform: translateX(3px);
+  }
+  textarea + .md-icon,
+  input + .md-icon {
+    margin-top: 0;
+    transform: translateX(0);
+  }
+  input + .md-icon {
+    margin-right: 6px;
+  }
+}
+
+.md-field > .md-icon ~ .md-file,
+.md-field > .md-icon ~ .md-input,
+.md-field > .md-icon ~ .md-textarea {
+  margin-left: 0;
+}
+
+.md-field > .md-icon:after {
+  content: none;
+}
+
+.md-field .md-input-action,
+.md-field.md-has-password .md-toggle-password {
+  right: 2px;
+}
+
+.md-field .md-input-action,
+.md-field.md-has-password .md-toggle-password {
+  top: 14px;
+}
