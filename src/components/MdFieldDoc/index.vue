@@ -509,7 +509,15 @@ export default {
     disabled: null,
     noError: null,
     required: null,
-    hasMessages: false
+    hasMessages: false,
+    regular: null,
+    maxLength: null,
+    date: null,
+    voice: null,
+    description: null,
+    money: null,
+    password: null,
+    empty: null
   }),
   computed: {
     messageClass() {

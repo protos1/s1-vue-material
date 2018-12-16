@@ -30,10 +30,6 @@
 }
 
 .s1-md-app-content-main {
-  padding: 0 20px !important; 
+  padding: 0 20px !important;
   width: calc(100% - #{$lateralBreathingSpace});
-}
-
-.md-app:not(.md-overlap).md-theme-default {
-  
 }
