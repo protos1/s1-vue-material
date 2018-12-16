@@ -1,15 +1,22 @@
-.md-field.md-focused label,
-.md-field.md-has-value label {
-  font-size: 14px;
+//LABEL
+.md-field {
+  &.md-focused label,
+  &.md-has-value label {
+    font-size: 14px;
+  }
+  label {
+    left: 8px;
+  }
+  &:not(.md-inline).md-focused label {
+    opacity: 0.6;
+  }
+  &.md-has-textarea:not(.md-autogrow) label {
+    left: 8px;
+  }
 }
 
 .md-field input.md-input {
   padding: 0 8px;
-}
-
-.md-field label {
-  left: 8px;
-  // top: 12px;
 }
 
 .md-field {
@@ -17,7 +24,7 @@
 }
 
 .md-field::after {
-  height: calc(100% + 8px);
+  height: calc(100% + 4px);
   border: 1px solid rgba(0, 0, 0, 0.12);
   z-index: -1;
   border-radius: 2px;
@@ -25,10 +32,6 @@
 
 .md-field:not([class*="bg"])::after {
   background-color: #fff !important;
-}
-
-.md-field:not(.md-inline).md-focused label {
-  opacity: 0.6;
 }
 
 .md-field {
@@ -54,10 +57,6 @@
     flex-shrink: 0;
     padding: 0 8px;
   }
-}
-
-.md-field.md-has-textarea:not(.md-autogrow) label {
-  left: 8px;
 }
 
 .md-field.md-has-textarea:not(.md-autogrow) .md-textarea {
@@ -107,4 +106,24 @@
 .md-field .md-input-action,
 .md-field.md-has-password .md-toggle-password {
   top: 14px;
+}
+
+.md-field .md-prefix {
+  padding-left: 8px;
+}
+
+.md-field .md-suffix {
+  padding-right: 8px;
+}
+
+.md-field input {
+  width: 100%;
+}
+
+.md-field.md-clearable .md-input {
+  padding-right: 38px;
+}
+
+.md-field-helper-text {
+  flex-wrap: wrap;
 }
