@@ -1,18 +1,14 @@
 @import "~vue-material/dist/vue-material.min.css";
-
 //HACKS (crazy hacks to craziest contexts)
 @import "./s1/hacks/hacks";
-
 //VARIABLES
 @import "./s1/variables";
-
 //MIXINS
 @import "./s1/_mixins/border-radius";
 @import "./s1/_mixins/instalment-colors";
 @import "./s1/_mixins/md-field-size";
 @import "./s1/_mixins/spacing-utilities";
 @import "./s1/_mixins/width-size";
-
 // //MODS
 // @import "./s1/mods/md-app";
 // @import "./s1/mods/md-button";
@@ -26,15 +22,16 @@
 // @import "./s1/mods/md-svg-loader";
 // @import "./s1/mods/md-table";
 @import "./s1/mods/resets";
-
 //COMPONENTS - VUE MATERIAL
 @import "./s1/components-vm/md-button";
+@import "./s1/components-vm/md-card";
+@import "./s1/components-vm/md-drawer";
 @import "./s1/components-vm/md-field";
-
 //COMPONENTS - S1
 @import "./s1/components-s1/app-toolbar";
 @import "./s1/components-s1/card-flag";
 @import "./s1/components-s1/chip-wrapper";
+@import "./s1/components-s1/container";
 @import "./s1/components-s1/empty-state";
 @import "./s1/components-s1/general-structure";
 @import "./s1/components-s1/instalment-square";
@@ -45,7 +42,6 @@
 @import "./s1/components-s1/transition-toogle";
 @import "./s1/components-s1/upload";
 @import "./s1/components-s1/vertical-divider";
-
 //UTILITIES
 @import "./s1/utilities/align-items";
 @import "./s1/utilities/bg-color";

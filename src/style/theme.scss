@@ -1,5 +1,4 @@
 @import "~vue-material/dist/theme/engine";
-
 @include md-register-theme(
   "default",
   (
@@ -7,7 +6,6 @@
     accent: md-get-palette-color(red, A200)
   )
 );
-
 @import "~vue-material/dist/components/MdButton/theme";
 @import "~vue-material/dist/components/MdIcon/theme";
 @import "~vue-material/dist/components/MdField/theme";
@@ -16,3 +14,11 @@
 @import "~vue-material/dist/components/MdContent/theme";
 @import "~vue-material/dist/components/MdDrawer/theme";
 @import "~vue-material/dist/components/MdToolbar/theme";
+@import "~vue-material/dist/components/MdAvatar/theme";
+@import "~vue-material/dist/components/MdBadge/theme";
+@import "~vue-material/dist/components/MdCard/theme";
+@import "~vue-material/dist/components/MdDatepicker/theme";
+@import "~vue-material/dist/components/MdDialog/theme";
+@import "~vue-material/dist/components/MdMenu/theme";
+@import "~vue-material/dist/components/MdAutocomplete/theme";
+@import "~vue-material/dist/components/MdList/theme";

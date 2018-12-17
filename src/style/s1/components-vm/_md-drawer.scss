@@ -1,0 +1,9 @@
+.md-drawer {
+  width: 230px;
+  &.md-persistent-mini {
+    transform: none !important;
+    border: 0 none !important;
+  }
+}
+
+//TODO: Avoid transform all elements of this type

@@ -12,7 +12,14 @@ import {
   MdElevation,
   MdLayout,
   MdToolbar,
-  MdList
+  MdList,
+  MdAvatar,
+  MdRipple,
+  MdBadge,
+  MdCard,
+  MdDatepicker,
+  MdDialog,
+  MdMenu
 } from "vue-material/dist/components";
 
 //general css file
@@ -32,6 +39,13 @@ Vue.use(MdElevation);
 Vue.use(MdLayout);
 Vue.use(MdToolbar);
 Vue.use(MdList);
+Vue.use(MdAvatar);
+Vue.use(MdRipple);
+Vue.use(MdBadge);
+Vue.use(MdCard);
+Vue.use(MdDatepicker);
+Vue.use(MdDialog);
+Vue.use(MdMenu);
 
 Vue.config.productionTip = false;
 
