@@ -1,13 +1,10 @@
 <template>
-  <div>
-    <h1 class="md-display-3">Buttons</h1>
+  <div class="section" id="buttons">
+    <h1 class="md-display-3 s1-U__mg--bt16">Buttons</h1>
 
     <div>
-      <h2 class="display-2">1. Simple buttons</h2>
-      <p>
-        <b>S1CSS</b> remove margin from any button (because we believe that all spacing control need to be on dev's hands) and add
-        <code>.md-bordered</code>
-      </p>
+      <h2 class="md-display-1 s1-U__mg--bt8">1. Simple buttons</h2>
+      <p class="s1-U__mg--bt16">Removemos o <b>margin</b> de todos os botões (por acreditarmos que o espaçamento deve estar nas mãos do desenvolvedor) e adicionamos um novo tipo de botão, <code>.md-bordered</code></p>
 
       <ButtonDoc title="Flat"></ButtonDoc>
       <ButtonDoc classes="md-raised" title="Raised"></ButtonDoc>
@@ -15,11 +12,8 @@
     </div>
 
     <div>
-      <h2 class="display-2">2. Icon buttons</h2>
-      <p>
-        <b>S1CSS</b> add
-        <code>.md-icon-button.md-bordered</code>
-      </p>
+      <h2 class="md-display-1 s1-U__mg--bt8 s1-U__mg--tp8">2. Icon buttons</h2>
+      <p class="s1-U__mg--bt16">Adicionamos <code>.md-icon-button.md-bordered</code></p>
 
       <IconButtonDoc title="Flat"></IconButtonDoc>
       <IconButtonDoc classes="md-raised" title="Raised"></IconButtonDoc>
@@ -27,11 +21,8 @@
     </div>
 
     <div>
-      <h2 class="display-2">3. Buttons variations</h2>
-      <p>
-        <b>S1CSS</b> add
-        <code>.md-icon-button.squared</code>
-      </p>
+      <h2 class="md-display-1 s1-U__mg--bt8">3. Buttons variations</h2>
+      <p class="s1-U__mg--bt16">Adicionamos <code>.md-icon-button.squared</code></p>
 
       <IconButtonDoc classes="squared md-raised" title="Squared icon button"></IconButtonDoc>
       <ButtonDoc classes="md-dense md-raised" title="Dense button"></ButtonDoc>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="section" id="badges">
     <h1 class="md-display-3">Badges</h1>
     <a href="https://vuematerial.io/components/input">https://vuematerial.io/components/input</a>
 

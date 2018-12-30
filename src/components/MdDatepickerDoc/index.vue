@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="section" id="datepickers">
     <h1 class="md-display-3">Datepicker</h1>
     <a
       href="https://vuematerial.io/components/datepicker"

@@ -2,6 +2,9 @@
   &__border-dashed--2 {
     border: 2px dashed rgba(0,0,0,0.12);
   }
+  &__border-solid--1 {
+    border: 1px solid rgba(0,0,0,0.12);
+  }
   &__no-border {
     border: 0 none;
     &#{$forceSuffix} {

@@ -1,21 +1,21 @@
 <template>
-  <div>
-    <h3>{{title}}</h3>
+  <div class="s1-U__pd--bt16">
+    <h3 class="s1-U__mg--bt8">{{title}}</h3>
     <div>
-      <div>
-        <md-button :class="classes">Default</md-button>
-        <md-button :md-ripple="false" :class="classes">Ripple Off</md-button>
-        <md-button class="md-primary" :class="classes">Primary</md-button>
-        <md-button class="md-accent" :class="classes">Accent</md-button>
+      <div style="margin-bottom: 6px;">
+        <md-button :class="classes" style="margin-right: 6px;">Default</md-button>
+        <md-button :md-ripple="false" :class="classes" style="margin-right: 6px;">Ripple Off</md-button>
+        <md-button class="md-primary" :class="classes" style="margin-right: 6px;">Primary</md-button>
+        <md-button class="md-accent" :class="classes" style="margin-right: 6px;">Accent</md-button>
       </div>
       <div>
-        <md-button :class="classes" disabled>Default</md-button>
-        <md-button :md-ripple="false" :class="classes" disabled>Ripple Off</md-button>
-        <md-button class="md-primary" :class="classes" disabled>Primary</md-button>
-        <md-button class="md-accent" :class="classes" disabled>Accent</md-button>
+        <md-button :class="classes" disabled style="margin-right: 6px;">Default</md-button>
+        <md-button :md-ripple="false" :class="classes" disabled style="margin-right: 6px;">Ripple Off</md-button>
+        <md-button class="md-primary" :class="classes" disabled style="margin-right: 6px;">Primary</md-button>
+        <md-button class="md-accent" :class="classes" disabled style="margin-right: 6px;">Accent</md-button>
       </div>
     </div>
-    <div class="example-code">
+    <div class="s1-U__bg-color--body-bg s1-U__pd--lt16 s1-U__pd--rt16 s1-U__mg--tp8 s1-U__border-solid--1">
       <code>
 &#x3C;md-button{{classes && ` class="${classes}"`}}&#x3E;Default&#x3C;/md-button&#x3E;
 &#x3C;md-button :md-ripple=&#x22;false&#x22;{{classes && ` class="${classes}"`}}&#x3E;Ripple Off&#x3C;/md-button&#x3E;

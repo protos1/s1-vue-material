@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div style="display: flex">
-      <md-app md-waterfall md-mode="fixed" style="min-height: 100vh;width: 100%">
+      <md-app md-waterfall md-mode="fixed" style="height: 100vh;width: 100%">
         <md-app-drawer :md-active.sync="menuVisible" md-persistent="mini">
           <!-- <md-toolbar class="md-transparent" md-elevation="0">
 
@@ -21,53 +21,33 @@
               <span class="md-list-item-text">Esconder</span>
             </md-list-item>
 
-            <md-list-item>
-              <md-icon>move_to_inbox</md-icon>
-              <span class="md-list-item-text">Inbox</span>
+            <md-list-item @click="scrollTo('.md-app-scroller', '#buttons', 500)">
+              <md-icon :class="activeSectionId === 'buttons' ? 's1-U__text-color--primary-force' : ''">view_agenda</md-icon>
+              <span class="md-list-item-text" :class="activeSectionId === 'buttons' ? 's1-U__text-color--primary' : ''">Buttons</span>
             </md-list-item>
 
-            <md-list-item>
-              <md-icon>send</md-icon>
-              <span class="md-list-item-text">Sent Mail</span>
+            <md-list-item @click="scrollTo('.md-app-scroller', '#datepickers', 500)">
+              <md-icon :class="activeSectionId === 'datepickers' ? 's1-U__text-color--primary-force' : ''">event</md-icon>
+              <span class="md-list-item-text" :class="activeSectionId === 'datepickers' ? 's1-U__text-color--primary' : ''">Datepicker</span>
             </md-list-item>
 
-            <md-list-item>
-              <md-icon>delete</md-icon>
-              <span class="md-list-item-text">Trash</span>
+            <md-list-item @click="scrollTo('.md-app-scroller', '#cards', 500)">
+              <md-icon :class="activeSectionId === 'cards' ? 's1-U__text-color--primary-force' : ''">video_label</md-icon>
+              <span class="md-list-item-text" :class="activeSectionId === 'cards' ? 's1-U__text-color--primary' : ''">Cards</span>
             </md-list-item>
 
-            <md-list-item>
-              <md-icon>error</md-icon>
-              <span class="md-list-item-text">Spam</span>
-            </md-list-item>
           </md-list>
         </md-app-drawer>
 
         <md-app-content class="s1-container" style="border: 0 none;">
+          <MdButtonDoc/>
           <MdDatepickerDoc/>
           <MdCardDoc/>
           <MdBadgeDoc/>
           <MdAvatarDoc/>
-          <MdButtonDoc/>
           <MdFieldDoc/>
         </md-app-content>
       </md-app>
-      <md-drawer
-        class="md-right s1-U__flex-shrink-0"
-        :md-active.sync="menuVisible2"
-        md-persistent="mini"
-      >
-        <div class="s1-U__pd16">
-          <md-button class="s1-U__full-width md-button-content--full-width">
-            <div class="s1-U__align-children--center s1-U__full-width">
-              <span
-                class="s1-U__full-width s1-U__text-ellipsis s1-U__text-lowercase"
-              >renan.zozimo.ferreira@gmail.com</span>
-              <md-icon class="s1-U__flex-shrink-0 s1-U__mg--lt8">account_circle</md-icon>
-            </div>
-          </md-button>
-        </div>
-      </md-drawer>
     </div>
   </div>
 </template>
@@ -92,7 +72,8 @@ export default {
   },
   data: () => ({
     menuVisible: true,
-    menuVisible2: true
+    menuVisible2: true,
+    activeSectionId: null
   }),
   methods: {
     toggleMenu() {
@@ -100,7 +81,79 @@ export default {
     },
     toggleMenu2() {
       this.menuVisible2 = !this.menuVisible2;
-    }
+    },
+    scrollBodyTo(to, duration) {
+
+      Math.easeInOutQuad = function (t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+      };
+
+      let bodyRect = document.body.getBoundingClientRect(),
+        elemRect = document.querySelector(to).getBoundingClientRect(),
+        offset = elemRect.top - bodyRect.top;
+
+      let start = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0,
+        change = offset - start,
+        currentTime = 0,
+        increment = 10;
+
+      let animateScroll = function () {
+        currentTime += increment;
+        let val = Math.easeInOutQuad(currentTime, start, change, duration);
+        window.pageYOffset = document.documentElement.scrollTop = document.body.scrollTop = val;
+        if (currentTime < duration) {
+          setTimeout(animateScroll, increment);
+        }
+      };
+      animateScroll();
+    },
+    scrollTo(scrolledElement, to, duration) {
+
+      Math.easeInOutQuad = function (t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+      };
+
+      let bodyTop = document.querySelector(scrolledElement).getBoundingClientRect().top,
+        elemTop = document.querySelector(to).getBoundingClientRect().top,
+        offset = elemTop - bodyTop;
+
+      let start = document.querySelector(scrolledElement).scrollTop,
+        change = offset,
+        currentTime = 0,
+        increment = 10;
+
+      let animateScroll = function () {
+        currentTime += increment;
+        let val = Math.easeInOutQuad(currentTime, start, change, duration);
+        document.querySelector(scrolledElement).scrollTop = val;
+        if (currentTime < duration) {
+          setTimeout(animateScroll, increment);
+        }
+      };
+      animateScroll();
+    },
+    activeSection(sections) {
+      for(let i = 0; i < sections.length; i++ ) {
+        const n = sections[i].getBoundingClientRect().top + sections[i].getBoundingClientRect().height;
+        if (n > 0) {
+          this.activeSectionId = sections[i].id;
+          break
+        }
+      }
+    },
+  },
+  mounted() {
+    const element = document.querySelector('.md-app-scroller');
+    const sections = document.querySelectorAll('.section');
+    element.onscroll = () => {
+      this.activeSection(sections);
+    };
   }
 };
 </script>
