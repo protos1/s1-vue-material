@@ -1,4 +1,4 @@
-.md-button.md-bordered {
+.md-button.s1-md-bordered {
   &::after {
     content: "";
     position: absolute;
@@ -21,7 +21,7 @@
   margin: 0;
 }
 
-.md-icon-button.md-bordered:not(.squared) {
+.md-icon-button.s1-md-bordered:not(.squared) {
   &::after {
     border-radius: 50%;
   }

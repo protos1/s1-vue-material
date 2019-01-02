@@ -1,18 +1,58 @@
 //LABEL
 .md-field {
+  & {
+    margin-top: 16px;
+    min-height: 32px;
+    padding-top: 0 !important;
+  }
   &.md-focused label,
   &.md-has-value label {
     font-size: 14px;
+    padding: 0 4px;
+    margin-left: -4px;
+  }
+  &:not(.md-inline) {
+    &.md-focused label,
+    &.md-has-value label {
+      top: -14px !important;
+    }
+  }
+  &.md-has-textarea:not(.md-autogrow) {
+    &.md-focused label,
+    &.md-has-value label {
+      top: -10px !important;
+      z-index: 2;
+    }
+  }
+  &.md-inline {
+    &.md-focused label,
+    &.md-has-value label {
+      top: 7px !important;
+    }
   }
   label {
     left: 8px;
-  }
-  &:not(.md-inline).md-focused label {
-    opacity: 0.6;
+    top: 7px;
+    background-color: #fff;
+    will-change: transform;
   }
   &.md-has-textarea:not(.md-autogrow) label {
     left: 8px;
   }
+  // .md-textarea {
+  //   padding-top: 5px !important;
+  // }
+  &.md-has-textarea.md-autogrow {
+    padding-top: 6px !important;
+    padding-bottom: 4px;
+    label {
+      top: 12px;
+    }
+  }
+}
+
+.md-field.md-has-file label {
+  left: 44px;
 }
 
 .md-field input.md-input {
@@ -105,7 +145,7 @@
 
 .md-field .md-input-action,
 .md-field.md-has-password .md-toggle-password {
-  top: 14px;
+  top: -2px;
 }
 
 .md-field .md-prefix {
@@ -131,4 +171,13 @@
 .md-menu.md-select {
   flex: none;
   width: 100%;
+}
+
+.md-field.md-disabled:after {
+  background-color: rgba(0,0,0,0.1) !important;
+  background-image: none !important;
+}
+
+.md-field.md-disabled label {
+  background-color: transparent;
 }

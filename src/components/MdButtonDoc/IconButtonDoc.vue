@@ -1,6 +1,9 @@
 <template>
   <div class="s1-U__pd--bt16">
-    <h3 class="s1-U__mg--bt8">{{title}}</h3>
+    <h3 class="s1-U__mg--bt8 s1-U__align-children--center">
+      <span>{{title}}</span>
+      <md-chip class="md-primary s1-U__mg--lt8 s1-Doc__mini-tag" v-if="s1">S1 CSS</md-chip>
+    </h3>
     <div>
       <div style="margin-bottom: 6px;">
         <md-button class="md-icon-button" :class="classes" style="margin-right: 6px;">
@@ -31,7 +34,7 @@
         </md-button>
       </div>
     </div>
-    <div class="s1-U__bg-color--body-bg s1-U__pd--lt16 s1-U__pd--rt16 s1-U__mg--tp8 s1-U__border-solid--1">
+    <div class="s1-Doc-code-wrapper">
       <code>
 &#x3C;md-button class=&#x22;md-icon-button{{classes && ` ${classes}`}}&#x22;&#x3E;
   &#x3C;md-icon&#x3E;home&#x3C;/md-icon&#x3E;
@@ -55,7 +58,8 @@ export default {
   name: "IconButtonDoc",
   props: {
     classes: String,
-    title: String
+    title: String,
+    s1: Boolean
   }
 };
 </script>

@@ -19,7 +19,11 @@ import {
   MdCard,
   MdDatepicker,
   MdDialog,
-  MdMenu
+  MdMenu,
+  MdChips,
+  MdTooltip,
+  MdCheckbox,
+  MdRadio,
 } from "vue-material/dist/components";
 
 //general css file
@@ -46,6 +50,10 @@ Vue.use(MdCard);
 Vue.use(MdDatepicker);
 Vue.use(MdDialog);
 Vue.use(MdMenu);
+Vue.use(MdChips);
+Vue.use(MdTooltip);
+Vue.use(MdCheckbox);
+Vue.use(MdRadio);
 
 Vue.config.productionTip = false;
 
