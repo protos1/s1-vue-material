@@ -5,7 +5,7 @@
         <div class="s1-logo__wrapper">
           <img
             class="s1-logo__img"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/SVG_Logo.svg/2000px-SVG_Logo.svg.png"
+            src="logo.svg"
             alt="svg image"
           >
         </div>
