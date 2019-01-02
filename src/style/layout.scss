@@ -11,22 +11,18 @@
 @import "./s1/_mixins/width-size";
 //MODS
 @import "./s1/mods/md-app";
-// @import "./s1/mods/md-button";
-// @import "./s1/mods/md-card";
-// @import "./s1/mods/md-drawer";
-// @import "./s1/mods/md-field";
-// @import "./s1/mods/md-icon-inside-md-chip";
-// @import "./s1/mods/md-layout";
+@import "./s1/mods/md-button";
+@import "./s1/mods/md-card";
+@import "./s1/mods/md-drawer";
+@import "./s1/mods/md-field";
+@import "./s1/mods/md-field";
+@import "./s1/mods/md-layout";
 @import "./s1/mods/md-radio";
-// @import "./s1/mods/md-stepper";
-// @import "./s1/mods/md-svg-loader";
-// @import "./s1/mods/md-table";
+@import "./s1/mods/md-svg-loader";
+@import "./s1/mods/md-table";
 @import "./s1/mods/resets";
-//COMPONENTS - VUE MATERIAL
-@import "./s1/components-vm/md-button";
-@import "./s1/components-vm/md-card";
-@import "./s1/components-vm/md-drawer";
-@import "./s1/components-vm/md-field";
+
+
 //COMPONENTS - S1
 @import "./s1/components-s1/app-toolbar";
 @import "./s1/components-s1/card-flag";
@@ -36,7 +32,6 @@
 @import "./s1/components-s1/img-logo";
 @import "./s1/components-s1/instalment-square";
 @import "./s1/components-s1/mezzanine";
-@import "./s1/components-s1/product-card";
 @import "./s1/components-s1/sort-icons";
 @import "./s1/components-s1/tag";
 @import "./s1/components-s1/transition-toogle";

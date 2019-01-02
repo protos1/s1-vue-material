@@ -1,3 +1,7 @@
-.md-drawer.s1-md-drawer {
-  width: $lateralBreathingSpace;
+.md-drawer {
+  width: 250px;
+  &.md-persistent-mini {
+    transform: none !important;
+    border: 0 none !important;
+  }
 }
