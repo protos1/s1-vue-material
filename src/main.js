@@ -24,6 +24,7 @@ import {
   MdTooltip,
   MdCheckbox,
   MdRadio,
+  MdTable,
 } from "vue-material/dist/components";
 
 //general css file
@@ -54,6 +55,7 @@ Vue.use(MdChips);
 Vue.use(MdTooltip);
 Vue.use(MdCheckbox);
 Vue.use(MdRadio);
+Vue.use(MdTable);
 
 Vue.config.productionTip = false;
 

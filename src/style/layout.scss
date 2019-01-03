@@ -1,14 +1,18 @@
 @import "~vue-material/dist/vue-material.min.css";
+
 //HACKS (crazy hacks to craziest contexts)
 @import "./s1/hacks/hacks";
+
 //VARIABLES
 @import "./s1/variables";
+
 //MIXINS
 @import "./s1/_mixins/border-radius";
 @import "./s1/_mixins/instalment-colors";
 @import "./s1/_mixins/md-field-size";
 @import "./s1/_mixins/spacing-utilities";
 @import "./s1/_mixins/width-size";
+
 //MODS
 @import "./s1/mods/md-app";
 @import "./s1/mods/md-button";

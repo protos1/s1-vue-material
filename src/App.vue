@@ -167,16 +167,16 @@
                 <md-tooltip md-direction="right" v-show="!menuVisible">Height</md-tooltip>
               </md-list-item>
 
-              <md-list-item @click="scrollTo('.md-app-container', '#margin', 500)">
-                <md-icon :class="activeSectionId === 'margin' ? 's1-U__text-color--accent-force' : ''">label</md-icon>
-                <span class="md-list-item-text" :class="activeSectionId === 'margin' ? 's1-U__text-color--accent' : ''">Margins</span>
+              <md-list-item @click="scrollTo('.md-app-container', '#margins', 500)">
+                <md-icon :class="activeSectionId === 'margins' ? 's1-U__text-color--accent-force' : ''">label</md-icon>
+                <span class="md-list-item-text" :class="activeSectionId === 'margins' ? 's1-U__text-color--accent' : ''">Margins</span>
                 <md-tooltip md-direction="right" v-show="!menuVisible">Margins</md-tooltip>
               </md-list-item>
 
-              <md-list-item @click="scrollTo('.md-app-container', '#padding', 500)">
-                <md-icon :class="activeSectionId === 'padding' ? 's1-U__text-color--accent-force' : ''">label</md-icon>
-                <span class="md-list-item-text" :class="activeSectionId === 'padding' ? 's1-U__text-color--accent' : ''">Paggings</span>
-                <md-tooltip md-direction="right" v-show="!menuVisible">Paggings</md-tooltip>
+              <md-list-item @click="scrollTo('.md-app-container', '#paddings', 500)">
+                <md-icon :class="activeSectionId === 'paddings' ? 's1-U__text-color--accent-force' : ''">label</md-icon>
+                <span class="md-list-item-text" :class="activeSectionId === 'paddings' ? 's1-U__text-color--accent' : ''">Paddings</span>
+                <md-tooltip md-direction="right" v-show="!menuVisible">Paddings</md-tooltip>
               </md-list-item>
 
               <md-list-item @click="scrollTo('.md-app-container', '#text-color', 500)">
@@ -247,6 +247,14 @@
         <!-- <MdToolbarDoc/> -->
         <!-- <MdTooltipDoc/> -->
 
+        <S1UAlignItems/>
+        <S1UBgColor/>
+        <S1UBorder/>
+        <S1UFlexSettings/>
+        <S1UMargins/>
+        <S1UPaddings/>
+
+
       </md-app-content>
     </md-app>
   </div>
@@ -289,6 +297,13 @@ import MdSelectDoc from "./components/MdSelectDoc/index.vue";
 // import MdToolbarDoc from "./components/MdToolbarDoc/index.vue";
 // import MdTooltipDoc from "./components/MdTooltipDoc/index.vue";
 
+import S1UAlignItems from "./components/S1U-AlignItems/index.vue";
+import S1UBgColor from "./components/S1U-BgColor/index.vue";
+import S1UBorder from "./components/S1U-Border/index.vue";
+import S1UFlexSettings from "./components/S1U-FlexSettings/index.vue";
+import S1UMargins from "./components/S1U-Margins/index.vue";
+import S1UPaddings from "./components/S1U-Paddings/index.vue";
+
 export default {
   name: "app",
   components: {
@@ -327,6 +342,12 @@ export default {
     // MdTabsDoc,
     // MdToolbarDoc,
     // MdTooltipDoc,
+    S1UAlignItems,
+    S1UBgColor,
+    S1UBorder,
+    S1UFlexSettings,
+    S1UMargins,
+    S1UPaddings,
   },
   data: () => ({
     menuVisible: true,
@@ -390,6 +411,10 @@ code {
   padding: 0;
   border-radius: 0;
   white-space: pre;
+}
+
+p code {
+  background-color: rgba(0,0,0,0.1)
 }
 
 .s1-Doc__mini-tag {
