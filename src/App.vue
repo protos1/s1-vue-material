@@ -3,11 +3,7 @@
     <md-app class="s1-md-app">
       <md-app-drawer :md-active.sync="menuVisible" md-persistent="mini">
         <div class="s1-logo__wrapper">
-          <img
-            class="s1-logo__img"
-            src="logo.svg"
-            alt="svg image"
-          >
+          <img class="s1-logo__img" src="logo.svg" alt="svg image">
         </div>
 
         <md-list class="md-dense" :md-expand-single="true">
@@ -19,50 +15,90 @@
           </md-list-item>
 
           <md-list-item @click="scrollTo('.md-app-container', '#app-doc', 500)">
-            <md-icon :class="activeSectionId === 'app-doc' ? 's1-U__text-color--accent-force' : ''">desktop_windows</md-icon>
-            <span class="md-list-item-text" :class="activeSectionId === 'app-doc' ? 's1-U__text-color--accent' : ''">Estrutura Geral</span>
+            <md-icon
+              :class="activeSectionId === 'app-doc' ? 's1-U__text-color--accent-force' : ''"
+            >desktop_windows</md-icon>
+            <span
+              class="md-list-item-text"
+              :class="activeSectionId === 'app-doc' ? 's1-U__text-color--accent' : ''"
+            >Estrutura Geral</span>
             <md-tooltip md-direction="right" v-show="!menuVisible">Estrutura geral</md-tooltip>
           </md-list-item>
 
           <md-list-item @click="scrollTo('.md-app-container', '#buttons', 500)">
-            <md-icon :class="activeSectionId === 'buttons' ? 's1-U__text-color--accent-force' : ''">view_agenda</md-icon>
-            <span class="md-list-item-text" :class="activeSectionId === 'buttons' ? 's1-U__text-color--accent' : ''">Buttons</span>
+            <md-icon
+              :class="activeSectionId === 'buttons' ? 's1-U__text-color--accent-force' : ''"
+            >view_agenda</md-icon>
+            <span
+              class="md-list-item-text"
+              :class="activeSectionId === 'buttons' ? 's1-U__text-color--accent' : ''"
+            >Buttons</span>
             <md-tooltip md-direction="right" v-show="!menuVisible">Buttons</md-tooltip>
           </md-list-item>
 
           <md-list-item @click="scrollTo('.md-app-container', '#datepickers', 500)">
-            <md-icon :class="activeSectionId === 'datepickers' ? 's1-U__text-color--accent-force' : ''">event</md-icon>
-            <span class="md-list-item-text" :class="activeSectionId === 'datepickers' ? 's1-U__text-color--accent' : ''">Datepicker</span>
+            <md-icon
+              :class="activeSectionId === 'datepickers' ? 's1-U__text-color--accent-force' : ''"
+            >event</md-icon>
+            <span
+              class="md-list-item-text"
+              :class="activeSectionId === 'datepickers' ? 's1-U__text-color--accent' : ''"
+            >Datepicker</span>
             <md-tooltip md-direction="right" v-show="!menuVisible">Datepicker</md-tooltip>
           </md-list-item>
 
           <md-list-item @click="scrollTo('.md-app-container', '#checkboxes', 500)">
-            <md-icon :class="activeSectionId === 'checkboxes' ? 's1-U__text-color--accent-force' : ''">check_box</md-icon>
-            <span class="md-list-item-text" :class="activeSectionId === 'checkboxes' ? 's1-U__text-color--accent' : ''">Checkbox</span>
+            <md-icon
+              :class="activeSectionId === 'checkboxes' ? 's1-U__text-color--accent-force' : ''"
+            >check_box</md-icon>
+            <span
+              class="md-list-item-text"
+              :class="activeSectionId === 'checkboxes' ? 's1-U__text-color--accent' : ''"
+            >Checkbox</span>
             <md-tooltip md-direction="right" v-show="!menuVisible">Checkbox</md-tooltip>
           </md-list-item>
 
           <md-list-item @click="scrollTo('.md-app-container', '#file', 500)">
-            <md-icon :class="activeSectionId === 'file' ? 's1-U__text-color--accent-force' : ''">attach_file</md-icon>
-            <span class="md-list-item-text" :class="activeSectionId === 'file' ? 's1-U__text-color--accent' : ''">File</span>
+            <md-icon
+              :class="activeSectionId === 'file' ? 's1-U__text-color--accent-force' : ''"
+            >attach_file</md-icon>
+            <span
+              class="md-list-item-text"
+              :class="activeSectionId === 'file' ? 's1-U__text-color--accent' : ''"
+            >File</span>
             <md-tooltip md-direction="right" v-show="!menuVisible">File</md-tooltip>
           </md-list-item>
 
           <md-list-item @click="scrollTo('.md-app-container', '#input-textarea', 500)">
-            <md-icon :class="activeSectionId === 'input-textarea' ? 's1-U__text-color--accent-force' : ''">text_format</md-icon>
-            <span class="md-list-item-text" :class="activeSectionId === 'input-textarea' ? 's1-U__text-color--accent' : ''">Input & textarea</span>
+            <md-icon
+              :class="activeSectionId === 'input-textarea' ? 's1-U__text-color--accent-force' : ''"
+            >text_format</md-icon>
+            <span
+              class="md-list-item-text"
+              :class="activeSectionId === 'input-textarea' ? 's1-U__text-color--accent' : ''"
+            >Input & textarea</span>
             <md-tooltip md-direction="right" v-show="!menuVisible">Input & textarea</md-tooltip>
           </md-list-item>
 
           <md-list-item @click="scrollTo('.md-app-container', '#radio', 500)">
-            <md-icon :class="activeSectionId === 'radio' ? 's1-U__text-color--accent-force' : ''">radio_button_checked</md-icon>
-            <span class="md-list-item-text" :class="activeSectionId === 'radio' ? 's1-U__text-color--accent' : ''">Radio</span>
+            <md-icon
+              :class="activeSectionId === 'radio' ? 's1-U__text-color--accent-force' : ''"
+            >radio_button_checked</md-icon>
+            <span
+              class="md-list-item-text"
+              :class="activeSectionId === 'radio' ? 's1-U__text-color--accent' : ''"
+            >Radio</span>
             <md-tooltip md-direction="right" v-show="!menuVisible">Radio</md-tooltip>
           </md-list-item>
 
           <md-list-item @click="scrollTo('.md-app-container', '#select', 500)">
-            <md-icon :class="activeSectionId === 'select' ? 's1-U__text-color--accent-force' : ''">tab_unselected</md-icon>
-            <span class="md-list-item-text" :class="activeSectionId === 'select' ? 's1-U__text-color--accent' : ''">Select</span>
+            <md-icon
+              :class="activeSectionId === 'select' ? 's1-U__text-color--accent-force' : ''"
+            >tab_unselected</md-icon>
+            <span
+              class="md-list-item-text"
+              :class="activeSectionId === 'select' ? 's1-U__text-color--accent' : ''"
+            >Select</span>
             <md-tooltip md-direction="right" v-show="!menuVisible">Select</md-tooltip>
           </md-list-item>
 
@@ -72,61 +108,104 @@
             <md-tooltip md-direction="right" v-show="!menuVisible">S1 Components</md-tooltip>
 
             <md-list slot="md-expand">
-
               <md-list-item @click="scrollTo('.md-app-container', '#app-toolbar', 500)">
-                <md-icon :class="activeSectionId === 'app-toolbar' ? 's1-U__text-color--accent-force' : ''">label</md-icon>
-                <span class="md-list-item-text" :class="activeSectionId === 'app-toolbar' ? 's1-U__text-color--accent' : ''">App toolbar</span>
+                <md-icon
+                  :class="activeSectionId === 'app-toolbar' ? 's1-U__text-color--accent-force' : ''"
+                >label</md-icon>
+                <span
+                  class="md-list-item-text"
+                  :class="activeSectionId === 'app-toolbar' ? 's1-U__text-color--accent' : ''"
+                >App toolbar</span>
                 <md-tooltip md-direction="right" v-show="!menuVisible">App toolbar</md-tooltip>
               </md-list-item>
 
               <md-list-item @click="scrollTo('.md-app-container', '#card-flag', 500)">
-                <md-icon :class="activeSectionId === 'card-flag' ? 's1-U__text-color--accent-force' : ''">label</md-icon>
-                <span class="md-list-item-text" :class="activeSectionId === 'card-flag' ? 's1-U__text-color--accent' : ''">Card flag</span>
+                <md-icon
+                  :class="activeSectionId === 'card-flag' ? 's1-U__text-color--accent-force' : ''"
+                >label</md-icon>
+                <span
+                  class="md-list-item-text"
+                  :class="activeSectionId === 'card-flag' ? 's1-U__text-color--accent' : ''"
+                >Card flag</span>
                 <md-tooltip md-direction="right" v-show="!menuVisible">Card flag</md-tooltip>
               </md-list-item>
 
               <md-list-item @click="scrollTo('.md-app-container', '#chip-wrapper', 500)">
-                <md-icon :class="activeSectionId === 'chip-wrapper' ? 's1-U__text-color--accent-force' : ''">label</md-icon>
-                <span class="md-list-item-text" :class="activeSectionId === 'chip-wrapper' ? 's1-U__text-color--accent' : ''">Chip wrapper</span>
+                <md-icon
+                  :class="activeSectionId === 'chip-wrapper' ? 's1-U__text-color--accent-force' : ''"
+                >label</md-icon>
+                <span
+                  class="md-list-item-text"
+                  :class="activeSectionId === 'chip-wrapper' ? 's1-U__text-color--accent' : ''"
+                >Chip wrapper</span>
                 <md-tooltip md-direction="right" v-show="!menuVisible">Chip wrapper</md-tooltip>
               </md-list-item>
 
               <md-list-item @click="scrollTo('.md-app-container', '#mezzanine', 500)">
-                <md-icon :class="activeSectionId === 'mezzanine' ? 's1-U__text-color--accent-force' : ''">label</md-icon>
-                <span class="md-list-item-text" :class="activeSectionId === 'mezzanine' ? 's1-U__text-color--accent' : ''">Mezzanine</span>
+                <md-icon
+                  :class="activeSectionId === 'mezzanine' ? 's1-U__text-color--accent-force' : ''"
+                >label</md-icon>
+                <span
+                  class="md-list-item-text"
+                  :class="activeSectionId === 'mezzanine' ? 's1-U__text-color--accent' : ''"
+                >Mezzanine</span>
                 <md-tooltip md-direction="right" v-show="!menuVisible">Mezzanine</md-tooltip>
               </md-list-item>
 
               <md-list-item @click="scrollTo('.md-app-container', '#sort-icons', 500)">
-                <md-icon :class="activeSectionId === 'sort-icons' ? 's1-U__text-color--accent-force' : ''">label</md-icon>
-                <span class="md-list-item-text" :class="activeSectionId === 'sort-icons' ? 's1-U__text-color--accent' : ''">Sort icons</span>
+                <md-icon
+                  :class="activeSectionId === 'sort-icons' ? 's1-U__text-color--accent-force' : ''"
+                >label</md-icon>
+                <span
+                  class="md-list-item-text"
+                  :class="activeSectionId === 'sort-icons' ? 's1-U__text-color--accent' : ''"
+                >Sort icons</span>
                 <md-tooltip md-direction="right" v-show="!menuVisible">Sort icons</md-tooltip>
               </md-list-item>
 
               <md-list-item @click="scrollTo('.md-app-container', '#tags', 500)">
-                <md-icon :class="activeSectionId === 'tags' ? 's1-U__text-color--accent-force' : ''">label</md-icon>
-                <span class="md-list-item-text" :class="activeSectionId === 'tags' ? 's1-U__text-color--accent' : ''">Sort icons</span>
+                <md-icon
+                  :class="activeSectionId === 'tags' ? 's1-U__text-color--accent-force' : ''"
+                >label</md-icon>
+                <span
+                  class="md-list-item-text"
+                  :class="activeSectionId === 'tags' ? 's1-U__text-color--accent' : ''"
+                >Sort icons</span>
                 <md-tooltip md-direction="right" v-show="!menuVisible">Sort icons</md-tooltip>
               </md-list-item>
 
               <md-list-item @click="scrollTo('.md-app-container', '#transition-toggle', 500)">
-                <md-icon :class="activeSectionId === 'transition-toggle' ? 's1-U__text-color--accent-force' : ''">label</md-icon>
-                <span class="md-list-item-text" :class="activeSectionId === 'transition-toggle' ? 's1-U__text-color--accent' : ''">Transition toggle</span>
+                <md-icon
+                  :class="activeSectionId === 'transition-toggle' ? 's1-U__text-color--accent-force' : ''"
+                >label</md-icon>
+                <span
+                  class="md-list-item-text"
+                  :class="activeSectionId === 'transition-toggle' ? 's1-U__text-color--accent' : ''"
+                >Transition toggle</span>
                 <md-tooltip md-direction="right" v-show="!menuVisible">Transition toggle</md-tooltip>
               </md-list-item>
 
               <md-list-item @click="scrollTo('.md-app-container', '#upload', 500)">
-                <md-icon :class="activeSectionId === 'upload' ? 's1-U__text-color--accent-force' : ''">label</md-icon>
-                <span class="md-list-item-text" :class="activeSectionId === 'upload' ? 's1-U__text-color--accent' : ''">Upload</span>
+                <md-icon
+                  :class="activeSectionId === 'upload' ? 's1-U__text-color--accent-force' : ''"
+                >label</md-icon>
+                <span
+                  class="md-list-item-text"
+                  :class="activeSectionId === 'upload' ? 's1-U__text-color--accent' : ''"
+                >Upload</span>
                 <md-tooltip md-direction="right" v-show="!menuVisible">Upload</md-tooltip>
               </md-list-item>
 
               <md-list-item @click="scrollTo('.md-app-container', '#vertical-divider', 500)">
-                <md-icon :class="activeSectionId === 'vertical-divider' ? 's1-U__text-color--accent-force' : ''">label</md-icon>
-                <span class="md-list-item-text" :class="activeSectionId === 'vertical-divider' ? 's1-U__text-color--accent' : ''">Vertical divider</span>
+                <md-icon
+                  :class="activeSectionId === 'vertical-divider' ? 's1-U__text-color--accent-force' : ''"
+                >label</md-icon>
+                <span
+                  class="md-list-item-text"
+                  :class="activeSectionId === 'vertical-divider' ? 's1-U__text-color--accent' : ''"
+                >Vertical divider</span>
                 <md-tooltip md-direction="right" v-show="!menuVisible">Vertical divider</md-tooltip>
               </md-list-item>
-
             </md-list>
           </md-list-item>
 
@@ -136,77 +215,128 @@
             <md-tooltip md-direction="right" v-show="!menuVisible">S1 Utilities</md-tooltip>
 
             <md-list slot="md-expand">
-
               <md-list-item @click="scrollTo('.md-app-container', '#align-items', 500)">
-                <md-icon :class="activeSectionId === 'align-items' ? 's1-U__text-color--accent-force' : ''">vertical_align_center</md-icon>
-                <span class="md-list-item-text" :class="activeSectionId === 'align-items' ? 's1-U__text-color--accent' : ''">Align children</span>
+                <md-icon
+                  :class="activeSectionId === 'align-items' ? 's1-U__text-color--accent-force' : ''"
+                >vertical_align_center</md-icon>
+                <span
+                  class="md-list-item-text"
+                  :class="activeSectionId === 'align-items' ? 's1-U__text-color--accent' : ''"
+                >Align children</span>
                 <md-tooltip md-direction="right" v-show="!menuVisible">Align children</md-tooltip>
               </md-list-item>
 
               <md-list-item @click="scrollTo('.md-app-container', '#bg-color', 500)">
-                <md-icon :class="activeSectionId === 'bg-color' ? 's1-U__text-color--accent-force' : ''">format_paint</md-icon>
-                <span class="md-list-item-text" :class="activeSectionId === 'bg-color' ? 's1-U__text-color--accent' : ''">BG Color</span>
+                <md-icon
+                  :class="activeSectionId === 'bg-color' ? 's1-U__text-color--accent-force' : ''"
+                >format_paint</md-icon>
+                <span
+                  class="md-list-item-text"
+                  :class="activeSectionId === 'bg-color' ? 's1-U__text-color--accent' : ''"
+                >BG Color</span>
                 <md-tooltip md-direction="right" v-show="!menuVisible">BG Color</md-tooltip>
               </md-list-item>
 
               <md-list-item @click="scrollTo('.md-app-container', '#border', 500)">
-                <md-icon :class="activeSectionId === 'border' ? 's1-U__text-color--accent-force' : ''">border_outer</md-icon>
-                <span class="md-list-item-text" :class="activeSectionId === 'border' ? 's1-U__text-color--accent' : ''">Border</span>
+                <md-icon
+                  :class="activeSectionId === 'border' ? 's1-U__text-color--accent-force' : ''"
+                >border_outer</md-icon>
+                <span
+                  class="md-list-item-text"
+                  :class="activeSectionId === 'border' ? 's1-U__text-color--accent' : ''"
+                >Border</span>
                 <md-tooltip md-direction="right" v-show="!menuVisible">Border</md-tooltip>
               </md-list-item>
 
               <md-list-item @click="scrollTo('.md-app-container', '#flex-settings', 500)">
-                <md-icon :class="activeSectionId === 'flex-settings' ? 's1-U__text-color--accent-force' : ''">label</md-icon>
-                <span class="md-list-item-text" :class="activeSectionId === 'flex-settings' ? 's1-U__text-color--accent' : ''">Flex settings</span>
+                <md-icon
+                  :class="activeSectionId === 'flex-settings' ? 's1-U__text-color--accent-force' : ''"
+                >label</md-icon>
+                <span
+                  class="md-list-item-text"
+                  :class="activeSectionId === 'flex-settings' ? 's1-U__text-color--accent' : ''"
+                >Flex settings</span>
                 <md-tooltip md-direction="right" v-show="!menuVisible">Flex settings</md-tooltip>
               </md-list-item>
 
               <md-list-item @click="scrollTo('.md-app-container', '#height', 500)">
-                <md-icon :class="activeSectionId === 'height' ? 's1-U__text-color--accent-force' : ''">panorama_vertical</md-icon>
-                <span class="md-list-item-text" :class="activeSectionId === 'height' ? 's1-U__text-color--accent' : ''">Height</span>
+                <md-icon
+                  :class="activeSectionId === 'height' ? 's1-U__text-color--accent-force' : ''"
+                >panorama_vertical</md-icon>
+                <span
+                  class="md-list-item-text"
+                  :class="activeSectionId === 'height' ? 's1-U__text-color--accent' : ''"
+                >Height</span>
                 <md-tooltip md-direction="right" v-show="!menuVisible">Height</md-tooltip>
               </md-list-item>
 
               <md-list-item @click="scrollTo('.md-app-container', '#margins', 500)">
-                <md-icon :class="activeSectionId === 'margins' ? 's1-U__text-color--accent-force' : ''">label</md-icon>
-                <span class="md-list-item-text" :class="activeSectionId === 'margins' ? 's1-U__text-color--accent' : ''">Margins</span>
+                <md-icon
+                  :class="activeSectionId === 'margins' ? 's1-U__text-color--accent-force' : ''"
+                >label</md-icon>
+                <span
+                  class="md-list-item-text"
+                  :class="activeSectionId === 'margins' ? 's1-U__text-color--accent' : ''"
+                >Margins</span>
                 <md-tooltip md-direction="right" v-show="!menuVisible">Margins</md-tooltip>
               </md-list-item>
 
               <md-list-item @click="scrollTo('.md-app-container', '#paddings', 500)">
-                <md-icon :class="activeSectionId === 'paddings' ? 's1-U__text-color--accent-force' : ''">label</md-icon>
-                <span class="md-list-item-text" :class="activeSectionId === 'paddings' ? 's1-U__text-color--accent' : ''">Paddings</span>
+                <md-icon
+                  :class="activeSectionId === 'paddings' ? 's1-U__text-color--accent-force' : ''"
+                >label</md-icon>
+                <span
+                  class="md-list-item-text"
+                  :class="activeSectionId === 'paddings' ? 's1-U__text-color--accent' : ''"
+                >Paddings</span>
                 <md-tooltip md-direction="right" v-show="!menuVisible">Paddings</md-tooltip>
               </md-list-item>
 
               <md-list-item @click="scrollTo('.md-app-container', '#text-color', 500)">
-                <md-icon :class="activeSectionId === 'text-color' ? 's1-U__text-color--accent-force' : ''">format_color_text</md-icon>
-                <span class="md-list-item-text" :class="activeSectionId === 'text-color' ? 's1-U__text-color--accent' : ''">Text color</span>
+                <md-icon
+                  :class="activeSectionId === 'text-color' ? 's1-U__text-color--accent-force' : ''"
+                >format_color_text</md-icon>
+                <span
+                  class="md-list-item-text"
+                  :class="activeSectionId === 'text-color' ? 's1-U__text-color--accent' : ''"
+                >Text color</span>
                 <md-tooltip md-direction="right" v-show="!menuVisible">Text color</md-tooltip>
               </md-list-item>
 
               <md-list-item @click="scrollTo('.md-app-container', '#text-settings', 500)">
-                <md-icon :class="activeSectionId === 'text-settings' ? 's1-U__text-color--accent-force' : ''">format_italic</md-icon>
-                <span class="md-list-item-text" :class="activeSectionId === 'text-settings' ? 's1-U__text-color--accent' : ''">Text settings</span>
+                <md-icon
+                  :class="activeSectionId === 'text-settings' ? 's1-U__text-color--accent-force' : ''"
+                >format_italic</md-icon>
+                <span
+                  class="md-list-item-text"
+                  :class="activeSectionId === 'text-settings' ? 's1-U__text-color--accent' : ''"
+                >Text settings</span>
                 <md-tooltip md-direction="right" v-show="!menuVisible">Text settings</md-tooltip>
               </md-list-item>
 
               <md-list-item @click="scrollTo('.md-app-container', '#visibility', 500)">
-                <md-icon :class="activeSectionId === 'visibility' ? 's1-U__text-color--accent-force' : ''">visibility_off</md-icon>
-                <span class="md-list-item-text" :class="activeSectionId === 'visibility' ? 's1-U__text-color--accent' : ''">Visibility</span>
+                <md-icon
+                  :class="activeSectionId === 'visibility' ? 's1-U__text-color--accent-force' : ''"
+                >visibility_off</md-icon>
+                <span
+                  class="md-list-item-text"
+                  :class="activeSectionId === 'visibility' ? 's1-U__text-color--accent' : ''"
+                >Visibility</span>
                 <md-tooltip md-direction="right" v-show="!menuVisible">Visibility</md-tooltip>
               </md-list-item>
 
               <md-list-item @click="scrollTo('.md-app-container', '#width', 500)">
-                <md-icon :class="activeSectionId === 'width' ? 's1-U__text-color--accent-force' : ''">panorama_horizontal</md-icon>
-                <span class="md-list-item-text" :class="activeSectionId === 'width' ? 's1-U__text-color--accent' : ''">Width</span>
+                <md-icon
+                  :class="activeSectionId === 'width' ? 's1-U__text-color--accent-force' : ''"
+                >panorama_horizontal</md-icon>
+                <span
+                  class="md-list-item-text"
+                  :class="activeSectionId === 'width' ? 's1-U__text-color--accent' : ''"
+                >Width</span>
                 <md-tooltip md-direction="right" v-show="!menuVisible">Width</md-tooltip>
               </md-list-item>
-
             </md-list>
-
           </md-list-item>
-
         </md-list>
       </md-app-drawer>
 
@@ -246,15 +376,17 @@
         <!-- <MdTabsDoc/> -->
         <!-- <MdToolbarDoc/> -->
         <!-- <MdTooltipDoc/> -->
-
         <S1UAlignItems/>
         <S1UBgColor/>
         <S1UBorder/>
         <S1UFlexSettings/>
+        <S1UHeight/>
         <S1UMargins/>
         <S1UPaddings/>
-
-
+        <S1UTextColor/>
+        <S1UTextSettings/>
+        <S1UVisibility/>
+        <S1UWidth/>
       </md-app-content>
     </md-app>
   </div>
@@ -301,8 +433,13 @@ import S1UAlignItems from "./components/S1U-AlignItems/index.vue";
 import S1UBgColor from "./components/S1U-BgColor/index.vue";
 import S1UBorder from "./components/S1U-Border/index.vue";
 import S1UFlexSettings from "./components/S1U-FlexSettings/index.vue";
+import S1UHeight from "./components/S1U-Height/index.vue";
 import S1UMargins from "./components/S1U-Margins/index.vue";
 import S1UPaddings from "./components/S1U-Paddings/index.vue";
+import S1UTextColor from "./components/S1U-TextColor/index.vue";
+import S1UTextSettings from "./components/S1U-TextSettings/index.vue";
+import S1UVisibility from "./components/S1U-Visibility/index.vue";
+import S1UWidth from "./components/S1U-Width/index.vue";
 
 export default {
   name: "app",
@@ -346,8 +483,13 @@ export default {
     S1UBgColor,
     S1UBorder,
     S1UFlexSettings,
+    S1UHeight,
     S1UMargins,
     S1UPaddings,
+    S1UTextColor,
+    S1UTextSettings,
+    S1UVisibility,
+    S1UWidth,
   },
   data: () => ({
     menuVisible: true,
@@ -359,15 +501,16 @@ export default {
       this.menuVisible = !this.menuVisible;
     },
     scrollTo(scrolledElement, to, duration) {
-
-      Math.easeInOutQuad = function (t, b, c, d) {
+      Math.easeInOutQuad = function(t, b, c, d) {
         t /= d / 2;
-        if (t < 1) return c / 2 * t * t + b;
+        if (t < 1) return (c / 2) * t * t + b;
         t--;
-        return -c / 2 * (t * (t - 2) - 1) + b;
+        return (-c / 2) * (t * (t - 2) - 1) + b;
       };
 
-      let bodyTop = document.querySelector(scrolledElement).getBoundingClientRect().top,
+      let bodyTop = document
+          .querySelector(scrolledElement)
+          .getBoundingClientRect().top,
         elemTop = document.querySelector(to).getBoundingClientRect().top,
         offset = elemTop - bodyTop;
 
@@ -376,7 +519,7 @@ export default {
         currentTime = 0,
         increment = 10;
 
-      let animateScroll = function () {
+      let animateScroll = function() {
         currentTime += increment;
         let val = Math.easeInOutQuad(currentTime, start, change, duration);
         document.querySelector(scrolledElement).scrollTop = val;
@@ -387,18 +530,21 @@ export default {
       animateScroll();
     },
     activeSection(sections) {
-      for(let i = 0; i < sections.length; i++ ) {
-        const n = sections[i].getBoundingClientRect().top + sections[i].getBoundingClientRect().height - 200;
+      for (let i = 0; i < sections.length; i++) {
+        const n =
+          sections[i].getBoundingClientRect().top +
+          sections[i].getBoundingClientRect().height -
+          200;
         if (n > 0) {
           this.activeSectionId = sections[i].id;
-          break
+          break;
         }
       }
-    },
+    }
   },
   mounted() {
-    const element = document.querySelector('.md-app-container');
-    const sections = document.querySelectorAll('.section');
+    const element = document.querySelector(".md-app-container");
+    const sections = document.querySelectorAll(".section");
     element.onscroll = () => {
       this.activeSection(sections);
     };
@@ -414,7 +560,7 @@ code {
 }
 
 p code {
-  background-color: rgba(0,0,0,0.1)
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .s1-Doc__mini-tag {
@@ -424,12 +570,11 @@ p code {
 }
 .s1-Doc-code-wrapper {
   overflow: auto;
-  background-color: rgba(0,0,0,0.05);
+  background-color: rgba(0, 0, 0, 0.05);
   padding: 0 16px;
   margin-top: 8px;
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 2px;
 }
-
 </style>
 

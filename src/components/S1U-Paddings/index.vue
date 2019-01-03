@@ -1,5 +1,5 @@
 <template>
-  <div class="section" id="paddings">
+  <div class="section s1-U__pd--bt32" id="paddings">
     <h1 class="md-display-3 s1-U__mg--bt16">Paddings</h1>
 
     <div>
