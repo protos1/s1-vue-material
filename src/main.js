@@ -28,10 +28,7 @@ import {
 } from "vue-material/dist/components";
 
 //general css file
-import "./style/layout.scss";
-
-//theme file
-import "./style/theme.scss";
+import "./style/style.scss";
 
 Vue.use(MdButton);
 Vue.use(MdIcon);

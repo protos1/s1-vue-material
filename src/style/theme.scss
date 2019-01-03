@@ -1,4 +1,7 @@
+
+//THEME
 @import "~vue-material/dist/theme/engine";
+
 @include md-register-theme(
   "default",
   (
@@ -6,24 +9,17 @@
     accent: md-get-palette-color(red, A200)
   )
 );
-@import "~vue-material/dist/components/MdButton/theme";
-@import "~vue-material/dist/components/MdIcon/theme";
-@import "~vue-material/dist/components/MdField/theme";
-@import "~vue-material/dist/components/MdSwitch/theme";
-@import "~vue-material/dist/components/MdApp/theme";
-@import "~vue-material/dist/components/MdContent/theme";
-@import "~vue-material/dist/components/MdDrawer/theme";
-@import "~vue-material/dist/components/MdToolbar/theme";
-@import "~vue-material/dist/components/MdAvatar/theme";
-@import "~vue-material/dist/components/MdBadge/theme";
-@import "~vue-material/dist/components/MdCard/theme";
-@import "~vue-material/dist/components/MdDatepicker/theme";
-@import "~vue-material/dist/components/MdDialog/theme";
-@import "~vue-material/dist/components/MdMenu/theme";
-@import "~vue-material/dist/components/MdAutocomplete/theme";
-@import "~vue-material/dist/components/MdList/theme";
-@import "~vue-material/dist/components/MdChips/theme";
-@import "~vue-material/dist/components/MdTooltip/theme";
-@import "~vue-material/dist/components/MdCheckbox/theme";
-@import "~vue-material/dist/components/MdRadio/theme";
-@import "~vue-material/dist/components/MdTable/theme";
+
+//VUE MATERIAL COMPONENTS THEME
+@import "~vue-material/dist/theme/all";
+
+//ALL S1 VARIABLES
+@import "./global-variables";
+@import "./theme/variables";
+
+//COMPONENTS - S1
+@import "./theme/components-s1/tag";
+
+//UTILITIES
+@import "./theme/utilities/bg-color";
+@import "./theme/utilities/text-color";

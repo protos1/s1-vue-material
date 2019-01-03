@@ -1,9 +1,3 @@
-.s1-md-app--main-structure {
-  .mezzanine-is-active & {
-    width: calc(100% - #{$mezzanineSize - $lateralBreathingSpace});
-  }
-}
-
 .s1-mezzanine {
   position: fixed;
   right: 0;

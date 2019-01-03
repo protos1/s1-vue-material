@@ -1,57 +1,53 @@
 @import "~vue-material/dist/vue-material.min.css";
 
 //HACKS (crazy hacks to craziest contexts)
-@import "./s1/hacks/hacks";
+@import "./layout/hacks/hacks";
 
 //VARIABLES
-@import "./s1/variables";
+@import "./global-variables";
+@import "./layout/variables";
 
 //MIXINS
-@import "./s1/_mixins/border-radius";
-@import "./s1/_mixins/instalment-colors";
-@import "./s1/_mixins/md-field-size";
-@import "./s1/_mixins/spacing-utilities";
-@import "./s1/_mixins/width-size";
+@import "./layout/_mixins/border-radius";
+@import "./layout/_mixins/instalment-colors";
+@import "./layout/_mixins/md-field-size";
+@import "./layout/_mixins/spacing-utilities";
+@import "./layout/_mixins/width-size";
 
 //MODS
-@import "./s1/mods/md-app";
-@import "./s1/mods/md-button";
-@import "./s1/mods/md-card";
-@import "./s1/mods/md-drawer";
-@import "./s1/mods/md-field";
-@import "./s1/mods/md-field";
-@import "./s1/mods/md-layout";
-@import "./s1/mods/md-radio";
-@import "./s1/mods/md-svg-loader";
-@import "./s1/mods/md-table";
-@import "./s1/mods/resets";
-
+@import "./layout/mods/md-app";
+@import "./layout/mods/md-button";
+@import "./layout/mods/md-card";
+@import "./layout/mods/md-drawer";
+@import "./layout/mods/md-field";
+@import "./layout/mods/md-field";
+@import "./layout/mods/md-layout";
+@import "./layout/mods/md-radio";
+@import "./layout/mods/md-svg-loader";
+@import "./layout/mods/md-table";
+@import "./layout/mods/resets";
 
 //COMPONENTS - S1
-@import "./s1/components-s1/app-toolbar";
-@import "./s1/components-s1/card-flag";
-@import "./s1/components-s1/chip-wrapper";
-@import "./s1/components-s1/empty-state";
-@import "./s1/components-s1/general-structure";
-@import "./s1/components-s1/img-logo";
-@import "./s1/components-s1/instalment-square";
-@import "./s1/components-s1/mezzanine";
-@import "./s1/components-s1/sort-icons";
-@import "./s1/components-s1/tag";
-@import "./s1/components-s1/transition-toogle";
-@import "./s1/components-s1/upload";
-@import "./s1/components-s1/vertical-divider";
+@import "./layout/components-s1/app-toolbar";
+@import "./layout/components-s1/card-flag";
+@import "./layout/components-s1/chip-wrapper";
+@import "./layout/components-s1/img-logo";
+@import "./layout/components-s1/mezzanine";
+@import "./layout/components-s1/sort-icons";
+@import "./layout/components-s1/tag";
+@import "./layout/components-s1/transition-toogle";
+@import "./layout/components-s1/upload";
+@import "./layout/components-s1/vertical-divider";
+
 //UTILITIES
-@import "./s1/utilities/align-items";
-@import "./s1/utilities/bg-color";
-@import "./s1/utilities/border-radius";
-@import "./s1/utilities/border";
-@import "./s1/utilities/flex-settings";
-@import "./s1/utilities/height";
-@import "./s1/utilities/justify-content";
-@import "./s1/utilities/margins";
-@import "./s1/utilities/paddings";
-@import "./s1/utilities/text-color";
-@import "./s1/utilities/text-settings";
-@import "./s1/utilities/visibility";
-@import "./s1/utilities/width";
+@import "./layout/utilities/align-items";
+@import "./layout/utilities/border-radius";
+@import "./layout/utilities/border";
+@import "./layout/utilities/flex-settings";
+@import "./layout/utilities/height";
+@import "./layout/utilities/justify-content";
+@import "./layout/utilities/margins";
+@import "./layout/utilities/paddings";
+@import "./layout/utilities/text-settings";
+@import "./layout/utilities/visibility";
+@import "./layout/utilities/width";
