@@ -7,7 +7,7 @@
     background-color: $primary;
     color: $white;
   }
-  &:not([class*="--accent"]) {
+  &:not([class*="--accent"]):not([class*="--primary"]) {
     background-color: #efefef;
     color: rgba(0,0,0,0.54)
   }

@@ -1,9 +1,9 @@
 <template>
-  <div class="section s1-U__pd--bt32" id="file">
+  <div class="section s1-U__pd--bt40" id="file">
     <h1 class="md-display-3 s1-U__mg--bt16">File</h1>
 
     <div class="s1-U__mg--bt16">
-      <a class="s1-U__text-ellipsis s1-U__full-width" href="https://vuematerial.io/components/file">https://vuematerial.io/components/file</a>
+      <a class="s1-U__text-ellipsis s1-U__full-width" target="_blank" href="https://vuematerial.io/components/file">vuematerial.io/file</a>
     </div>
 
     <div>

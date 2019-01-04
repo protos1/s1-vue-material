@@ -1,5 +1,5 @@
 <template>
-  <div class="section s1-U__pd--bt32" id="height">
+  <div class="section s1-U__pd--bt40" id="height">
     <h1 class="md-display-3 s1-U__mg--bt16">Height</h1>
 
     <div>

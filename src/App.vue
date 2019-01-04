@@ -111,7 +111,8 @@
               <md-list-item @click="scrollTo('.md-app-container', '#app-toolbar', 500)">
                 <md-icon
                   :class="activeSectionId === 'app-toolbar' ? 's1-U__text-color--accent-force' : ''"
-                >label</md-icon>
+                  style="transform: rotate(180deg)"
+                >video_label</md-icon>
                 <span
                   class="md-list-item-text"
                   :class="activeSectionId === 'app-toolbar' ? 's1-U__text-color--accent' : ''"
@@ -119,21 +120,10 @@
                 <md-tooltip md-direction="right" v-show="!menuVisible">App toolbar</md-tooltip>
               </md-list-item>
 
-              <md-list-item @click="scrollTo('.md-app-container', '#card-flag', 500)">
-                <md-icon
-                  :class="activeSectionId === 'card-flag' ? 's1-U__text-color--accent-force' : ''"
-                >label</md-icon>
-                <span
-                  class="md-list-item-text"
-                  :class="activeSectionId === 'card-flag' ? 's1-U__text-color--accent' : ''"
-                >Card flag</span>
-                <md-tooltip md-direction="right" v-show="!menuVisible">Card flag</md-tooltip>
-              </md-list-item>
-
               <md-list-item @click="scrollTo('.md-app-container', '#chip-wrapper', 500)">
                 <md-icon
                   :class="activeSectionId === 'chip-wrapper' ? 's1-U__text-color--accent-force' : ''"
-                >label</md-icon>
+                >dns</md-icon>
                 <span
                   class="md-list-item-text"
                   :class="activeSectionId === 'chip-wrapper' ? 's1-U__text-color--accent' : ''"
@@ -141,10 +131,21 @@
                 <md-tooltip md-direction="right" v-show="!menuVisible">Chip wrapper</md-tooltip>
               </md-list-item>
 
+              <md-list-item @click="scrollTo('.md-app-container', '#img-logo', 500)">
+                <md-icon
+                  :class="activeSectionId === 'img-logo' ? 's1-U__text-color--accent-force' : ''"
+                >photo</md-icon>
+                <span
+                  class="md-list-item-text"
+                  :class="activeSectionId === 'img-logo' ? 's1-U__text-color--accent' : ''"
+                >Img logo</span>
+                <md-tooltip md-direction="right" v-show="!menuVisible">Img logo</md-tooltip>
+              </md-list-item>
+
               <md-list-item @click="scrollTo('.md-app-container', '#mezzanine', 500)">
                 <md-icon
                   :class="activeSectionId === 'mezzanine' ? 's1-U__text-color--accent-force' : ''"
-                >label</md-icon>
+                >chrome_reader_mode</md-icon>
                 <span
                   class="md-list-item-text"
                   :class="activeSectionId === 'mezzanine' ? 's1-U__text-color--accent' : ''"
@@ -155,7 +156,7 @@
               <md-list-item @click="scrollTo('.md-app-container', '#sort-icons', 500)">
                 <md-icon
                   :class="activeSectionId === 'sort-icons' ? 's1-U__text-color--accent-force' : ''"
-                >label</md-icon>
+                >sort_by_alpha</md-icon>
                 <span
                   class="md-list-item-text"
                   :class="activeSectionId === 'sort-icons' ? 's1-U__text-color--accent' : ''"
@@ -166,18 +167,18 @@
               <md-list-item @click="scrollTo('.md-app-container', '#tags', 500)">
                 <md-icon
                   :class="activeSectionId === 'tags' ? 's1-U__text-color--accent-force' : ''"
-                >label</md-icon>
+                >local_offer</md-icon>
                 <span
                   class="md-list-item-text"
                   :class="activeSectionId === 'tags' ? 's1-U__text-color--accent' : ''"
-                >Sort icons</span>
-                <md-tooltip md-direction="right" v-show="!menuVisible">Sort icons</md-tooltip>
+                >Tags</span>
+                <md-tooltip md-direction="right" v-show="!menuVisible">Tags</md-tooltip>
               </md-list-item>
 
               <md-list-item @click="scrollTo('.md-app-container', '#transition-toggle', 500)">
                 <md-icon
                   :class="activeSectionId === 'transition-toggle' ? 's1-U__text-color--accent-force' : ''"
-                >label</md-icon>
+                >import_export</md-icon>
                 <span
                   class="md-list-item-text"
                   :class="activeSectionId === 'transition-toggle' ? 's1-U__text-color--accent' : ''"
@@ -185,21 +186,11 @@
                 <md-tooltip md-direction="right" v-show="!menuVisible">Transition toggle</md-tooltip>
               </md-list-item>
 
-              <md-list-item @click="scrollTo('.md-app-container', '#upload', 500)">
-                <md-icon
-                  :class="activeSectionId === 'upload' ? 's1-U__text-color--accent-force' : ''"
-                >label</md-icon>
-                <span
-                  class="md-list-item-text"
-                  :class="activeSectionId === 'upload' ? 's1-U__text-color--accent' : ''"
-                >Upload</span>
-                <md-tooltip md-direction="right" v-show="!menuVisible">Upload</md-tooltip>
-              </md-list-item>
-
               <md-list-item @click="scrollTo('.md-app-container', '#vertical-divider', 500)">
                 <md-icon
                   :class="activeSectionId === 'vertical-divider' ? 's1-U__text-color--accent-force' : ''"
-                >label</md-icon>
+                  style="transform: rotate(90deg)"
+                >vertical_align_center</md-icon>
                 <span
                   class="md-list-item-text"
                   :class="activeSectionId === 'vertical-divider' ? 's1-U__text-color--accent' : ''"
@@ -341,6 +332,18 @@
       </md-app-drawer>
 
       <md-app-content>
+        <div class="s1-U__mg--bt64">
+          <h1 class="md-display-3 s1-U__mg--bt64">S1VM</h1>
+
+          <h2 class="md-display-1 s1-U__mg--bt16">Introdução</h2>
+
+          <p class="md-subheading s1-U__mg--bt8">O objetivo deste projeto é manter o vuematerial funcionando, tentando contornar alguns problemas corriqueiros no desenvolvimento das telas e adicionando pequenas soluções que favorecem nossos sistemas. Diante da inviabildiade de fazermos algo próprio para nós, criamos o <b>S1VM (Solutions One + Vue Material)</b>, com o intuito de facilitar a constução de telas e reduzir o tempo gasto com resolução de problemas.</p>
+          <p class="md-subheading s1-U__mg--bt8">Sendo assim, para tudo o que não está aqui, visite o site oficial do Vue Material.</p>
+
+          <div class="s1-U__mg--bt16">
+            <a class="s1-U__text-ellipsis s1-U__full-width" target="_blank" href="https://vuematerial.io">vuematerial.io</a>
+          </div>
+        </div>        
         <MdAppDoc/>
         <!-- <MdAvatarDoc/> -->
         <!-- <MdBadgeDoc/> -->
@@ -376,6 +379,17 @@
         <!-- <MdTabsDoc/> -->
         <!-- <MdToolbarDoc/> -->
         <!-- <MdTooltipDoc/> -->
+
+        <S1AppToolbar/>
+        <S1ChipWrapper/>
+        <S1ImgLogo/>
+        <S1Mezzanine/>
+        <S1SortIcons/>
+        <S1Tags/>
+        <S1TransitionToggle/>
+        <!-- <S1Upload/> -->
+        <S1VerticalDivider/>
+
         <S1UAlignItems/>
         <S1UBgColor/>
         <S1UBorder/>
@@ -428,6 +442,17 @@ import MdSelectDoc from "./components/MdSelectDoc/index.vue";
 // import MdTabsDoc from "./components/MdTabsDoc/index.vue";
 // import MdToolbarDoc from "./components/MdToolbarDoc/index.vue";
 // import MdTooltipDoc from "./components/MdTooltipDoc/index.vue";
+
+import S1AppToolbar from "./components/S1AppToolbar/index.vue";
+import S1ChipWrapper from "./components/S1ChipWrapper/index.vue";
+import S1ImgLogo from "./components/S1ImgLogo/index.vue";
+import S1Mezzanine from "./components/S1Mezzanine/index.vue";
+import S1SortIcons from "./components/S1SortIcons/index.vue";
+import S1Tags from "./components/S1Tags/index.vue";
+import S1TransitionToggle from "./components/S1TransitionToggle/index.vue";
+// import S1Upload from "./components/S1Upload/index.vue";
+import S1VerticalDivider from "./components/S1VerticalDivider/index.vue";
+
 
 import S1UAlignItems from "./components/S1U-AlignItems/index.vue";
 import S1UBgColor from "./components/S1U-BgColor/index.vue";
@@ -490,6 +515,15 @@ export default {
     S1UTextSettings,
     S1UVisibility,
     S1UWidth,
+    S1AppToolbar,
+    S1ChipWrapper,
+    S1ImgLogo,
+    S1Mezzanine,
+    S1SortIcons,
+    S1Tags,
+    S1TransitionToggle,
+    // S1Upload,
+    S1VerticalDivider,
   },
   data: () => ({
     menuVisible: true,

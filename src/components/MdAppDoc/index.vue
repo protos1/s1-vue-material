@@ -4,7 +4,7 @@
     <h1 class="md-display-3 s1-U__mg--bt16">Estrutura geral</h1>
 
     <div class="s1-U__mg--bt16">
-      <a class="s1-U__text-ellipsis s1-U__full-width" href="https://vuematerial.io/components/app">https://vuematerial.io/components/app</a>
+      <a class="s1-U__text-ellipsis s1-U__full-width" target="_blank" href="https://vuematerial.io/components/app">vuematerial.io/app</a>
     </div>
 
     <p class="s1-U__mg--bt8">Utilizamos para essa estrutura um menu fixo à esquerda dando ênfase à uma logo quadrada. Quando o menu está fechado, ele exibe pelo menos os ícones de cada item, sendo possível ver uma label no mouseOver.</p>

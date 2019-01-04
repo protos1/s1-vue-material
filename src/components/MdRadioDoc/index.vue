@@ -3,7 +3,7 @@
     <h1 class="md-display-3 s1-U__mg--bt16">Radio</h1>
 
     <div class="s1-U__mg--bt16">
-      <a class="s1-U__text-ellipsis s1-U__full-width" href="https://vuematerial.io/components/datepicker">https://vuematerial.io/components/datepicker</a>
+      <a class="s1-U__text-ellipsis s1-U__full-width" target="_blank" href="https://vuematerial.io/components/radio">vuematerial.io/radio</a>
     </div>
 
     <div>
