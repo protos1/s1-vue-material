@@ -18,9 +18,9 @@
     }
   }
   &--body-bg {
-    background-color: $bgColor;
+    background-color: $app-background-color;
     &-force {
-      background-color: $bgColor !important;
+      background-color: $app-background-color !important;
     }
   }
   &--transparent {

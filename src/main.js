@@ -24,11 +24,11 @@ import {
   MdTooltip,
   MdCheckbox,
   MdRadio,
-  MdTable,
+  MdTable
 } from "vue-material/dist/components";
 
 //general css file
-import "./style/style.scss";
+import "./style/index.scss";
 
 Vue.use(MdButton);
 Vue.use(MdIcon);
