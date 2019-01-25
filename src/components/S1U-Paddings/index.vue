@@ -3,11 +3,15 @@
     <h1 class="md-display-3 s1-U__mg--bt16">Paddings</h1>
 
     <div>
-      <p class="s1-U__mg--bt16">Use as classes <code>s1-U__pd</code> para controlar o espaçamento interno dos elementos (<code>padding: x</code>). As possibilidades horizontais e verticais são definidas nas variáves $vertical e $horizontal</p>
+      <p class="s1-U__mg--bt16">
+        Use as classes
+        <code>s1-U__pd</code> para controlar o espaçamento interno dos elementos (
+        <code>padding: x</code>). As possibilidades horizontais e verticais são definidas nas variáves $vertical e $horizontal
+      </p>
       <div class="s1-Doc-code-wrapper s1-U__mg--bt32">
         <code>
-$vertical: 0, 4, 8, 16, 20, 32, 40;
-$horizontal: 0, 4, 8, 12, 16, 20, 24, 32, 40;
+          $vertical: 0, 4, 8, 16, 20, 32, 40, 48, 64;
+          $horizontal: 0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 64;
         </code>
       </div>
       <md-table style="max-width: 600px;">
@@ -91,30 +95,28 @@ $horizontal: 0, 4, 8, 12, 16, 20, 24, 32, 40;
         <template v-for="v in horizontal">
           <PaddingDoc direction="left" dir="lt" :number="v" v-bind:key="`lt-${v}`"/>
         </template>
-
       </md-table>
     </div>
   </div>
 </template>
 
 <style scoped>
-  .md-table.md-content {
-    padding: 0;
-  }
+.md-table.md-content {
+  padding: 0;
+}
 </style>
 
 <script>
-
 import PaddingDoc from "./Paddings.vue";
 
 export default {
   name: "S1UPaddings",
   data: () => ({
-    vertical: [0, 4, 8, 16, 20, 32, 40],
-    horizontal: [0, 4, 8, 12, 16, 20, 24, 32, 40]
+    vertical: [0, 4, 8, 16, 20, 32, 40, 48, 64],
+    horizontal: [0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 64]
   }),
   components: {
-    PaddingDoc,
+    PaddingDoc
   }
 };
 </script>

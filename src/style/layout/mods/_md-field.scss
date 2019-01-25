@@ -5,6 +5,7 @@
     min-height: 32px;
     padding-top: 0;
     z-index: 0;
+    margin-bottom: 16px;
   }
   &.md-has-textarea {
     > .md-textarea {
@@ -22,7 +23,8 @@
       border-color: rgba(0, 0, 0, 0.12) !important;
       background-color: #fff !important;
     }
-    &::after, &::before {
+    &::after,
+    &::before {
       border-radius: 2px;
     }
   }
@@ -40,7 +42,6 @@
     background-color: #fff !important;
   }
 }
-
 
 //LABEL
 .md-field {
@@ -141,16 +142,13 @@
   &.md-has-password .md-toggle-password {
     right: 2px;
   }
-
   .md-input-action,
   &.md-has-password .md-toggle-password {
     top: -2px;
   }
-
   .md-prefix {
     padding-left: 8px;
   }
-
   .md-suffix {
     padding-right: 8px;
   }
@@ -174,7 +172,7 @@
 //DISABLED
 .md-field {
   &.md-disabled:after {
-    background-color: rgba(0,0,0,0.1) !important;
+    background-color: rgba(0, 0, 0, 0.1) !important;
     background-image: none !important;
   }
   &.md-disabled label {
@@ -182,14 +180,12 @@
   }
 }
 
-
 @include md-field-size(50);
 @include md-field-size(100);
 @include md-field-size(150);
 @include md-field-size(200);
 @include md-field-size(250);
 @include md-field-size(300);
-
 .s1-file-input input {
   width: 100%;
 }

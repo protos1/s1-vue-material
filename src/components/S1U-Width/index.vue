@@ -91,19 +91,28 @@
           <md-table-cell>width: 400px</md-table-cell>
         </md-table-row>
 
+        <md-table-row>
+          <md-table-cell>.s1-U__width--540</md-table-cell>
+          <md-table-cell>width: 540px</md-table-cell>
+        </md-table-row>
+
+        <md-table-row>
+          <md-table-cell>.s1-U__width--900</md-table-cell>
+          <md-table-cell>width: 900px</md-table-cell>
+        </md-table-row>
       </md-table>
     </div>
   </div>
 </template>
 
 <style scoped>
-  .md-table.md-content {
-    padding: 0;
-  }
+.md-table.md-content {
+  padding: 0;
+}
 </style>
 
 <script>
 export default {
-  name: "S1UWidth",
+  name: "S1UWidth"
 };
 </script>
